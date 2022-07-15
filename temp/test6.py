@@ -1,15 +1,16 @@
 
-x = "0"
+i = ""
 a = []
 s = 0
 
-while x != "q":
-	x = input("number = ")
-	if (x == "q"):
+while True:
+	i = input("number = ")
+	if (i == "q"):
 		break
 	# check if x is an integer
-	a.append(int(x))
-	s = s + a
+	x = int(i)
+	a.append(x)
+	s = s + x
 
 avg = s / a.count()
 
