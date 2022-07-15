@@ -12,18 +12,16 @@ while True:
 	a.append(x)
 	s = s + x
 
-avg = s / a.count()
-
+avg = s / len(a)
 print(f"avg = {avg}")
+
 l = 0
 g = 0
-for i in a:
-	if i <= avg: 
+for j in a:
+	if j <= avg: 
 		l += 1
 	else:
 		g += 1
 
 print(f"lesser than = {l}")
 print(f"greater than = {g}")
-
-
